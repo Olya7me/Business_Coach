@@ -1,0 +1,21 @@
+//Переменные шрифтов//
+$font-family: "Manrope", sans-serif;
+$second-family: "Oswald", sans-serif;
+$third-family: "Roboto", sans-serif;
+
+//Цвета
+$accent-color: #A21420;//красный
+$text-color: #fff;//цвет текста
+$background-dark-color: #131313;//темный
+$black-color: #000;//черный
+$accent-color-hover:#b8555e;//при наведении на кнопку(можно поменять если не нравится)
+
+//Миксины
+//Миксин для заголовков для красного и для белого
+@mixin title-style ($font-family, $font-size, $font-weight, $color, $text-transform: none) {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    text-transform: $text-transform;
+    color: $color;
+}
