@@ -57,7 +57,7 @@ body {
   margin-bottom: 1px;
   font-family: "Manrope", sans-serif;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 2.5rem;
   text-transform: uppercase;
   color: #131313;
 }
@@ -85,7 +85,7 @@ body {
   margin-bottom: 10px;
   font-family: "Manrope", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .work-plane__flex-items-for-requirements .flex-item-for-requirements__text .text__list {
   font-family: "Manrope", sans-serif;
@@ -151,7 +151,7 @@ body {
   margin-bottom: 10px;
   font-family: "Manrope", sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
 }
 .work-plane__flex-items-for-steps .flex-item-for-steps__title .title__break::before {
   content: "\a";
@@ -196,7 +196,7 @@ body {
     font-size: 1rem;
   }
   .work-plane__flex-items-for-requirements .flex-item-for-requirements__image img {
-    width: 70px;
+    width: 100px;
   }
   .work-plane__flex-container-for-steps {
     display: flex;
@@ -235,17 +235,84 @@ body {
   }
   .work-plane__flex-container-for-title-and-requirements {
     display: flex;
+    align-items: center;
     flex-direction: column;
   }
   .work-plane__flex-items-for-title {
     margin-bottom: 60px;
   }
+  .work-plane__flex-items-for-title .flex-item-for-title__title {
+    font-size: 3rem;
+  }
   .work-plane__flex-items-for-title .flex-item-for-title__subtitle {
-    max-width: 300px;
     font-size: 1rem;
+    display: flex;
+    text-align: center;
+  }
+  .work-plane__flex-items-for-requirements {
+    align-self: self-end;
   }
   .work-plane__flex-items-for-requirements .flex-item-for-requirements__image img {
-    width: 70px;
+    width: 100px;
+  }
+  .work-plane__flex-container-for-steps {
+    display: flex;
+    flex-direction: column;
+  }
+  .work-plane__flex-container-for-steps .work-plane__flex-items-for-steps {
+    display: flex;
+    text-align: center;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .work-plane__flex-container-for-steps .work-plane__flex-items-for-steps .flex-item-for-steps__number {
+    font-weight: 600;
+  }
+  .work-plane__flex-container-for-steps .work-plane__flex-items-for-steps .flex-item-for-steps__title {
+    align-self: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  .work-plane__flex-container-for-steps .work-plane__flex-items-for-steps .flex-item-for-steps__title .title__break::before {
+    content: none;
+  }
+  .work-plane__flex-container-for-steps .work-plane__flex-items-for-steps .flex-item-for-steps__informational-text {
+    align-self: center;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (max-width: 424px) {
+  .work-plane-container {
+    padding: 30px;
+  }
+  .work-plane__black-line {
+    display: none;
+  }
+  .work-plane__flex-container-for-title-and-requirements {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .work-plane__flex-items-for-title {
+    margin-bottom: 60px;
+  }
+  .work-plane__flex-items-for-title .flex-item-for-title__title {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  .work-plane__flex-items-for-title .flex-item-for-title__subtitle {
+    font-size: 1rem;
+    display: flex;
+    text-align: center;
+  }
+  .work-plane__flex-items-for-requirements {
+    margin-bottom: 30px;
+  }
+  .work-plane__flex-items-for-requirements .flex-item-for-requirements__image img {
+    width: 100px;
   }
   .work-plane__flex-container-for-steps {
     display: flex;
