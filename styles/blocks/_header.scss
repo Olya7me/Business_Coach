@@ -1,9 +1,8 @@
 @import "../template";
 @import "../vars";
 
-// Переменные для адаптивности
-
 $menu-width: 647px;
+
 .wrapper {
   background: linear-gradient(193deg, #1f1f1f 0%, #131313 100%);
 }
@@ -25,7 +24,7 @@ $menu-width: 647px;
     display: flex;
     justify-content: space-between;
     width: $menu-width;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     list-style: none;
   }
 
@@ -35,19 +34,15 @@ $menu-width: 647px;
     color: #fff;
     font-weight: 400;
     font-family: $font-family;
-    font-size: 16px;
+    font-size: 1rem;
+    &:hover {
+      color: $accent-color-hover;
+    }
   }
 }
 
 .burger {
   display: none;
-  @media (max-width: 768px) and (min-width: 425px) {
-    display: block;
-  }
-  @media (max-width: 424px) and (min-width: 320px) {
-    display: block;
-  }
-
   &__icon {
     width: 80px;
     height: 80px;
@@ -59,35 +54,12 @@ $menu-width: 647px;
 
   &__column {
     &--left {
-      width: 719px;
+      max-width: 719px;
       align-content: center;
-      @media (max-width: 1200px) and (min-width: 769px) {
-        width: 60%;
-      }
-
-      @media (max-width: 768px) and (min-width: 425px) {
-        width: 100%;
-      }
-
-      @media (max-width: 424px) and (min-width: 320px) {
-        width: 100%;
-      }
     }
 
     &--right {
-      width: 521px;
-
-      @media (max-width: 1200px) and (min-width: 769px) {
-        width: 40%;
-      }
-
-      @media (max-width: 768px) and (min-width: 425px) {
-        width: 100%;
-      }
-
-      @media (max-width: 424px) and (min-width: 320px) {
-        width: 100%;
-      }
+      max-width: 521px;
     }
   }
 
@@ -95,14 +67,14 @@ $menu-width: 647px;
     font-family: $font-family;
     font-weight: 400;
     color: #fff;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 10px;
   }
 
   &__title {
     font-family: $font-family;
     font-weight: 600;
-    font-size: 48px;
+    font-size: 3rem;
     color: #fff;
     margin-bottom: 1px;
   }
@@ -116,7 +88,7 @@ $menu-width: 647px;
   &__paragraph {
     font-family: $font-family;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #fff;
     margin-bottom: 20px;
   }
@@ -132,7 +104,7 @@ $menu-width: 647px;
   &__button-link {
     font-family: $font-family;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #fff;
     text-decoration: none;
   }
@@ -154,6 +126,7 @@ $menu-width: 647px;
   position: fixed;
   bottom: 20px;
   right: 20px;
+  z-index: 9999;
   display: flex;
   align-items: center;
   padding: 31px 20px 31px;
@@ -163,14 +136,9 @@ $menu-width: 647px;
     font-family: $third-family;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     color: #131313;
     padding-left: 0;
-  }
-  @media (max-width: 424px) and (min-width: 320px) {
-    width: 200px;
-    height: 60px;
-    padding: 20px 15px 20px 60px;
   }
 
   &__icon {
@@ -183,6 +151,87 @@ $menu-width: 647px;
       width: 30px;
       height: 30px;
       margin-right: 10px;
+    }
+  }
+}
+
+@media (max-width: 1240px) and (min-width: 785px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .menu {
+    padding-left: 45px;
+    &__link {
+      font-size: 0.9rem;
+    }
+  }
+
+  .section {
+    display: flex;
+    flex-wrap: nowrap;
+    &__column {
+      &--left {
+        transform: scale(0.8);
+        width: 65%;
+      }
+    }
+
+    &__title-line {
+      max-width: 100%;
+    }
+  }
+
+  .whatsapp-button {
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 785px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+  .section {
+    flex-direction: column;
+    align-items: center;
+
+    &__column {
+      &--left,
+      &--right {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+      }
+
+      &--left {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__title-line {
+      max-width: 100%;
+    }
+  }
+
+  .whatsapp-button {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 424px) and (min-width: 320px) {
+  .whatsapp-button {
+    transform: scale(0.5);
+    &__icon {
+      width: 30px;
+      height: 30px;
     }
   }
 }
