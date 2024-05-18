@@ -44,46 +44,6 @@ body {
   background-color: #b8555e;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-html,
-body {
-  font-family: #A21420;
-  font-size: 16px;
-}
-
-.container {
-  max-width: 1240px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.button {
-  display: inline-block;
-  border-radius: 10px;
-  padding: 20px 88px;
-  width: 280px;
-  height: 67px;
-  background-color: #A21420;
-  cursor: pointer;
-  line-height: 100%;
-  font-weight: 600;
-  color: #fff;
-  font-size: 20px;
-  transition: background-color 0.2s, ease-in;
-}
-.button:hover {
-  background-color: #b8555e;
-}
-
 .wrapper {
   background: linear-gradient(193deg, #1f1f1f 0%, #131313 100%);
 }
@@ -266,4 +226,304 @@ body {
     height: 30px;
     margin-right: 10px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+.work-plane {
+  background-color: #E9E8E8;
+  color: #131313;
+}
+
+.work-plane__flex-container-for-title-and-requirements {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+  margin-bottom: 90px;
+}
+
+.work-plane__flex-items-for-title .flex-item-for-title__title {
+  margin-bottom: 1px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #131313;
+}
+.work-plane__flex-items-for-title .flex-item-for-title__underline {
+  margin-bottom: 20px;
+  max-width: 363px;
+  border: none;
+  border-radius: 10px;
+  border-top: 5px solid #A21420;
+}
+.work-plane__flex-items-for-title .flex-item-for-title__subtitle {
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.work-plane__flex-items-for-requirements {
+  display: flex;
+  gap: 10px;
+}
+.work-plane__flex-items-for-requirements .flex-item-for-requirements__image {
+  max-width: 100%;
+}
+.work-plane__flex-items-for-requirements .flex-item-for-requirements__text .text__title {
+  margin-bottom: 10px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+.work-plane__flex-items-for-requirements .flex-item-for-requirements__text .text__list {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  list-style-position: inside;
+}
+.work-plane__flex-items-for-requirements .flex-item-for-requirements__text .text__list li {
+  margin-bottom: 5px;
+}
+.work-plane__flex-items-for-requirements .flex-item-for-requirements__text .text__list li:nth-child(2) {
+  text-transform: uppercase;
+}
+
+.work-plane__black-line {
+  position: relative;
+}
+.work-plane__black-line .black-line {
+  max-width: 100%;
+  border: none;
+  border-radius: 10px;
+  border-top: 4px solid #131313;
+}
+
+.work-plane__flex-container-for-steps {
+  position: relative;
+  z-index: 1;
+  margin-top: -50px;
+  display: flex;
+  gap: 10px;
+}
+
+.work-plane__flex-items-for-steps {
+  display: flex;
+  flex-direction: column;
+  max-width: 240px;
+}
+.work-plane__flex-items-for-steps .flex-item-for-steps__image {
+  align-self: center;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: 4px solid #131313;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work-plane__flex-items-for-steps .flex-item-for-steps__image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.work-plane__flex-items-for-steps .flex-item-for-steps__number {
+  align-self: center;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  text-transform: none;
+  color: #A21420;
+}
+.work-plane__flex-items-for-steps .flex-item-for-steps__title {
+  margin-bottom: 10px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.work-plane__flex-items-for-steps .flex-item-for-steps__title .title__break::before {
+  content: "\a";
+  white-space: pre;
+}
+.work-plane__flex-items-for-steps .flex-item-for-steps__informational-text {
+  margin-bottom: 70px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 1280px) {
+  .work-plane-container {
+    padding: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 940px) {
+  .work-plane-container {
+    padding: 30px;
+  }
+  .work-plane__black-line {
+    display: none;
+  }
+  .work-plane__flex-items-for-steps {
+    display: flex;
+    max-width: 150px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .work-plane-container {
+    padding: 30px;
+  }
+  .work-plane__black-line {
+    display: none;
+  }
+  .work-plane__flex-items-for-title {
+    margin-bottom: 60px;
+  }
+  .work-plane__flex-items-for-title .flex-item-for-title__subtitle {
+    max-width: 300px;
+    font-size: 1rem;
+  }
+  .work-plane__flex-items-for-requirements .flex-item-for-requirements__image img {
+    width: 100px;
+  }
+  .work-plane__flex-container-for-steps {
+    display: flex;
+    flex-direction: column;
+  }
+  .work-plane__flex-container-for-steps .work-plane__flex-items-for-steps {
+    display: flex;
+    text-align: center;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .work-plane__flex-container-for-steps .work-plane__flex-items-for-steps .flex-item-for-steps__number {
+    font-weight: 600;
+  }
+  .work-plane__flex-container-for-steps .work-plane__flex-items-for-steps .flex-item-for-steps__title {
+    align-self: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  .work-plane__flex-container-for-steps .work-plane__flex-items-for-steps .flex-item-for-steps__title .title__break::before {
+    content: none;
+  }
+  .work-plane__flex-container-for-steps .work-plane__flex-items-for-steps .flex-item-for-steps__informational-text {
+    align-self: center;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+}
+@media (min-width: 425px) and (max-width: 670px) {
+  .work-plane-container {
+    padding: 30px;
+  }
+  .work-plane__black-line {
+    display: none;
+  }
+  .work-plane__flex-container-for-title-and-requirements {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .work-plane__flex-items-for-title {
+    margin-bottom: 60px;
+  }
+  .work-plane__flex-items-for-title .flex-item-for-title__title {
+    font-size: 3rem;
+  }
+  .work-plane__flex-items-for-title .flex-item-for-title__subtitle {
+    font-size: 1rem;
+    display: flex;
+    text-align: center;
+  }
+  .work-plane__flex-items-for-requirements {
+    align-self: self-end;
+  }
+  .work-plane__flex-items-for-requirements .flex-item-for-requirements__image img {
+    width: 100px;
+  }
+  .work-plane__flex-container-for-steps {
+    display: flex;
+    flex-direction: column;
+  }
+  .work-plane__flex-container-for-steps .work-plane__flex-items-for-steps {
+    display: flex;
+    text-align: center;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .work-plane__flex-container-for-steps .work-plane__flex-items-for-steps .flex-item-for-steps__number {
+    font-weight: 600;
+  }
+  .work-plane__flex-container-for-steps .work-plane__flex-items-for-steps .flex-item-for-steps__title {
+    align-self: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  .work-plane__flex-container-for-steps .work-plane__flex-items-for-steps .flex-item-for-steps__title .title__break::before {
+    content: none;
+  }
+  .work-plane__flex-container-for-steps .work-plane__flex-items-for-steps .flex-item-for-steps__informational-text {
+    align-self: center;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (max-width: 424px) {
+  .work-plane-container {
+    padding: 30px;
+  }
+  .work-plane__black-line {
+    display: none;
+  }
+  .work-plane__flex-container-for-title-and-requirements {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .work-plane__flex-items-for-title {
+    margin-bottom: 60px;
+  }
+  .work-plane__flex-items-for-title .flex-item-for-title__title {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  .work-plane__flex-items-for-title .flex-item-for-title__subtitle {
+    font-size: 1rem;
+    display: flex;
+    text-align: center;
+  }
+  .work-plane__flex-items-for-requirements {
+    margin-bottom: 30px;
+  }
+  .work-plane__flex-items-for-requirements .flex-item-for-requirements__image img {
+    width: 100px;
+  }
+  .work-plane__flex-container-for-steps {
+    display: flex;
+    flex-direction: column;
+  }
+  .work-plane__flex-container-for-steps .work-plane__flex-items-for-steps {
+    display: flex;
+    text-align: center;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .work-plane__flex-container-for-steps .work-plane__flex-items-for-steps .flex-item-for-steps__number {
+    font-weight: 600;
+  }
+  .work-plane__flex-container-for-steps .work-plane__flex-items-for-steps .flex-item-for-steps__title {
+    align-self: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  .work-plane__flex-container-for-steps .work-plane__flex-items-for-steps .flex-item-for-steps__title .title__break::before {
+    content: none;
+  }
+  .work-plane__flex-container-for-steps .work-plane__flex-items-for-steps .flex-item-for-steps__informational-text {
+    align-self: center;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    /*# sourceMappingURL=style.css.map */
