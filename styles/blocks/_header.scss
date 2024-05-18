@@ -1,0 +1,188 @@
+@import "../template";
+@import "../vars";
+
+// Переменные для адаптивности
+
+$menu-width: 647px;
+.wrapper {
+  background: linear-gradient(193deg, #1f1f1f 0%, #131313 100%);
+}
+.container {
+  min-height: 678px;
+}
+.header {
+  max-height: 60px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: $menu-width;
+    margin-top: 20px;
+    list-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    font-family: $font-family;
+    font-size: 16px;
+  }
+}
+
+.burger {
+  display: none;
+  @media (max-width: 768px) and (min-width: 425px) {
+    display: block;
+  }
+  @media (max-width: 424px) and (min-width: 320px) {
+    display: block;
+  }
+
+  &__icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+.section {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__column {
+    &--left {
+      width: 719px;
+      align-content: center;
+      @media (max-width: 1200px) and (min-width: 769px) {
+        width: 60%;
+      }
+
+      @media (max-width: 768px) and (min-width: 425px) {
+        width: 100%;
+      }
+
+      @media (max-width: 424px) and (min-width: 320px) {
+        width: 100%;
+      }
+    }
+
+    &--right {
+      width: 521px;
+
+      @media (max-width: 1200px) and (min-width: 769px) {
+        width: 40%;
+      }
+
+      @media (max-width: 768px) and (min-width: 425px) {
+        width: 100%;
+      }
+
+      @media (max-width: 424px) and (min-width: 320px) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__subtitle {
+    font-family: $font-family;
+    font-weight: 400;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 1px;
+  }
+
+  &__title-line {
+    stroke-width: 5px;
+    stroke: #a21420;
+    margin-bottom: 20px;
+  }
+
+  &__paragraph {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    width: 280px;
+    height: 67px;
+    border-radius: 10px;
+    border: none;
+    background: #a21420;
+    padding: 20px 88px;
+  }
+  &__button-link {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+  }
+  &__image {
+    width: 100%;
+    max-width: 438px;
+    height: auto;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+.whatsapp-button {
+  width: 243px;
+  height: 81px;
+  border-radius: 20px;
+  border: 1px solid black;
+  background: #fff;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  padding: 31px 20px 31px;
+  padding-right: 0;
+
+  &__text {
+    font-family: $third-family;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    color: #131313;
+    padding-left: 0;
+  }
+  @media (max-width: 424px) and (min-width: 320px) {
+    width: 200px;
+    height: 60px;
+    padding: 20px 15px 20px 60px;
+  }
+
+  &__icon {
+    width: 45px;
+    height: 45px;
+    background: url("path/to/whatsapp-icon.svg") no-repeat center;
+    margin-right: 20px;
+
+    @media (max-width: 424px) and (min-width: 320px) {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+  }
+}
