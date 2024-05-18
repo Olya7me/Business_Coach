@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Business_Coach</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <header class="header">
+          <div class="header__container">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">подробнее обо мне</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">кому подойдет</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">какие задачи решаем</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="burger">
+              <img
+                class="burger__icon"
+                src="./images/header/burger-menu-svgrepo-com.svg"
+                alt="burger-button"
+              />
+            </div>
+          </div>
+        </header>
+        <section class="section">
+          <div class="section__column section__column--left">
+            <div class="section__subtitle">Бизнес-ментор, коуч PCC ICF</div>
+            <h1 class="section__title">Дмитрий Воловиков</h1>
+            <div class="section__title-line">
+              <img src="./images/header/Vector 1.svg" alt="Красная линия" />
+            </div>
+            <p class="section__paragraph">
+              Помогу вам ввести в бизнес вашего сына, будущего наследника и со
+              временем полностью выйти из операционного управления компанией.
+            </p>
+            <button class="section__button">
+              <a
+                href="https://wa.me/+79281617170"
+                target="_blank"
+                class="section__button-link"
+                >Связаться</a
+              >
+            </button>
+          </div>
+          <div class="section__column section__column--right">
+            <img
+              class="section__image"
+              src="./images/header/photo_person.svg"
+              alt="Фото коуча"
+            />
+          </div>
+        </section>
+        <button class="whatsapp-button">
+          <span class="whatsapp-button__icon">
+            <img
+              src="./images/header/icon-phone-call.svg"
+              alt="Whatsapp кнопка"
+            />
+          </span>
+          <a
+            href="https://wa.me/+79281617170"
+            target="_blank"
+            class="whatsapp-button__text"
+            >Оставить заявку</a
+          >
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
