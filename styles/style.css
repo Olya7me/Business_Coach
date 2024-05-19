@@ -44,6 +44,100 @@ body {
   background-color: #b8555e;
 }
 
+.about {
+  background-image: url(/images/about/bg-photo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about__flex-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about__flex-items .flex-item__title-for-about {
+  padding-top: 80px;
+  margin-bottom: 50px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  text-transform: none;
+  color: #A21420;
+}
+.about__flex-items .flex-item__text-for-about {
+  max-width: 524px;
+  line-height: 1.6;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+}
+
+.flex-item__text-for-about:not(:nth-child(5)) {
+  margin-bottom: 25px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .about {
+    padding: 0 30px;
+    background-image: none;
+    background: linear-gradient(to right, #131313, #565656);
+  }
+  .about__flex-container {
+    display: flex;
+    justify-content: center;
+  }
+  .about__flex-items .flex-item__title-for-about {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .about__flex-items .flex-item__text-for-about {
+    max-width: 1160px;
+  }
+  .about__flex-items .flex-item__text-for-about:not(:nth-child(5)) {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  .about {
+    padding: 0 30px 30px 30px;
+    background-image: none;
+    background: linear-gradient(to right, #131313, #565656);
+  }
+  .about__flex-container {
+    display: flex;
+    justify-content: center;
+  }
+  .about__flex-items .flex-item__title-for-about {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .about__flex-items .flex-item__text-for-about {
+    max-width: 840px;
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 424px) {
+  .about {
+    padding: 0 30px 30px 30px;
+    background-image: none;
+    background: linear-gradient(to right, #131313, #565656);
+  }
+  .about__flex-container {
+    display: flex;
+    justify-content: center;
+  }
+  .about__flex-items .flex-item__title-for-about {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .about__flex-items .flex-item__text-for-about {
+    max-width: 840px;
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -413,7 +507,7 @@ body {
 
 @media screen and (max-width: 1280px) {
   .work-plane-container {
-    padding: 30px;
+    padding: 0 30px;
   }
 }
 @media (min-width: 768px) and (max-width: 940px) {
