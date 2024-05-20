@@ -1,247 +1,238 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./styles/normalize.css" />
-        <link rel="stylesheet" href="./styles/style.css" />
-        <title>Business_Coach</title>
-    </head>
-    <body>
-        <div class="wrapper">
-            <div class="container">
-                <header class="header">
-                    <div class="header__container">
-                        <nav class="menu">
-                            <ul class="menu__list">
-                                <li class="menu__item">
-                                    <a href="#" class="menu__link"
-                                        >подробнее обо мне</a
-                                    >
-                                </li>
-                                <li class="menu__item">
-                                    <a href="#" class="menu__link"
-                                        >кому подойдет</a
-                                    >
-                                </li>
-                                <li class="menu__item">
-                                    <a href="#plan-raboty" class="menu__link"
-                                        >какие задачи решаем</a
-                                    >
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="burger">
-                            <img
-                                class="burger__icon"
-                                src="./images/header/burger-menu-svgrepo-com.svg"
-                                alt="burger-button"
-                            />
-                        </div>
-                    </div>
-                </header>
-                <section class="section">
-                    <div class="section__column section__column--left">
-                        <div class="section__subtitle">
-                            Бизнес-ментор, коуч PCC ICF
-                        </div>
-                        <h1 class="section__title">Дмитрий Воловиков</h1>
-                        <div class="section__title-line">
-                            <img
-                                src="./images/header/vector.svg"
-                                alt="Красная линия"
-                            />
-                        </div>
-                        <p class="section__paragraph">
-                            Помогу вам ввести в бизнес вашего сына, будущего
-                            наследника и со временем полностью выйти из
-                            операционного управления компанией.
-                        </p>
-                        <button class="section__button">
-                            <a
-                                class="section__button-link"
-                                href="https://wa.me/+79281617170"
-                                target="_blank"
-                                role="button"
-                                >Связаться</a
-                            >
-                        </button>
-                    </div>
-                    <div class="section__column section__column--right">
-                        <img
-                            class="section__image"
-                            src="./images/header/photo_person.svg"
-                            alt="Фото коуча"
-                        />
-                    </div>
-                </section>
-                <button class="whatsapp-button">
-                    <span class="whatsapp-button__icon">
-                        <img
-                            src="./images/header/icon-phone-call.svg"
-                            alt="Whatsapp кнопка"
-                        />
-                    </span>
-                    <a
-                        class="whatsapp-button__text"
-                        href="https://wa.me/+79281617170"
-                        target="_blank"
-                        role="button"
-                        >Оставить заявку</a
-                    >
-                </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Business_Coach</title>
+  </head>
+  <body>
+    <div class="header-navigation">
+      <div class="header-navigation__container container">
+        <header class="header-navigation__flex-container">
+          <div class="header-navigation__flex-items">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#about-me" class="menu__link">подробнее обо мне</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">кому подойдет</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#work-plan" class="menu__link"
+                    >какие задачи решаем</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="burger">
+              <span></span>
             </div>
+          </div>
+        </header>
+        <section class="main-section">
+          <div class="main-section__column main-section__flex-container--text">
+            <div class="main-section__subtitle">
+              Бизнес-ментор, коуч PCC ICF
+            </div>
+            <h1 class="main-section__title">Дмитрий Воловиков</h1>
+            <div class="main-section__title-line">
+              <img src="./images/header/vector.svg" alt="Красная линия" />
+            </div>
+            <p class="main-section__paragraph">
+              Помогу вам ввести в бизнес вашего сына, будущего наследника и со
+              временем полностью выйти из операционного управления компанией.
+            </p>
+            <button class="main-section__button">
+              <a
+                class="main-section__button-link"
+                href="https://wa.me/+79281617170"
+                target="_blank"
+                >Связаться</a
+              >
+            </button>
+          </div>
+          <div class="main-section__column main-section__flex-container--photo">
+            <img
+              class="main-section__image"
+              src="./images/header/photo_person.svg"
+              alt="Фото коуча"
+            />
+          </div>
+        </section>
+        <button class="whatsapp-button">
+          <span class="whatsapp-button__icon">
+            <img
+              src="./images/header/icon-phone-call.svg"
+              alt="Whatsapp кнопка"
+            />
+          </span>
+          <a
+            class="whatsapp-button__text"
+            href="https://wa.me/+79281617170"
+            target="_blank"
+            >Оставить заявку</a
+          >
+        </button>
+        <button class="whatsapp-icon">
+          <a
+            class="whatsapp-icon__link"
+            href="https://wa.me/+79281617170"
+            target="_blank"
+          >
+            <img
+              class="whatsapp-icon__img"
+              src="./images/header/icon-phone-call.svg"
+              alt="Whatsapp иконка"
+          /></a>
+        </button>
+      </div>
+    </div>
+    <section id="work-plan" class="work-plane">
+      <div class="work-plane-container container">
+        <div class="work-plane__flex-container-for-title-and-requirements">
+          <div class="work-plane__flex-items-for-title">
+            <h2 class="flex-item-for-title__title">План работы</h2>
+            <hr class="flex-item-for-title__underline" />
+            <p class="flex-item-for-title__subtitle">
+              Работаем 3 месяца (12 коуч-сессий длительностью 1 час каждая)
+            </p>
+          </div>
+
+          <div class="work-plane__flex-items-for-requirements">
+            <div class="flex-item-for-requirements__image">
+              <img src="./images/plan/lampa.svg" alt="Лампа" />
+            </div>
+            <div class="flex-item-for-requirements__text">
+              <p class="text__title">что необходимо?</p>
+              <ul class="text__list">
+                <li>интернет</li>
+                <li>zoom</li>
+                <li>2-3 часа в неделю</li>
+                <li>желание и ответственность</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <section class="work-plane">
-            <div class="work-plane-container container">
-                <div
-                    class="work-plane__flex-container-for-title-and-requirements"
-                >
-                    <div class="work-plane__flex-items-for-title">
-                        <h2 class="flex-item-for-title__title">План работы</h2>
-                        <hr class="flex-item-for-title__underline" />
-                        <p class="flex-item-for-title__subtitle">
-                            Работаем 3 месяца (12 коуч-сессий длительностью 1
-                            час каждая)
-                        </p>
-                    </div>
 
-                    <div class="work-plane__flex-items-for-requirements">
-                        <div class="flex-item-for-requirements__image">
-                            <img src="./images/plan/lampa.svg" alt="Лампа" />
-                        </div>
-                        <div class="flex-item-for-requirements__text">
-                            <p class="text__title">что необходимо?</p>
-                            <ul class="text__list">
-                                <li>интернет</li>
-                                <li>zoom</li>
-                                <li>2-3 часа в неделю</li>
-                                <li>желание и ответственность</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        <div class="work-plane__black-line">
+          <hr class="black-line" />
+        </div>
 
-                <div class="work-plane__black-line">
-                    <hr class="black-line" />
-                </div>
-
-                <div class="work-plane__flex-container-for-steps">
-                    <div class="work-plane__flex-items-for-steps">
-                        <div class="flex-item-for-steps__image">
-                            <img src="./images/plan/01.svg" alt="Образ" />
-                        </div>
-                        <span class="flex-item-for-steps__number">1</span>
-                        <h3 class="flex-item-for-steps__title">
-                            Создаем образ
-                            <span class="title__break"
-                                >“успешного мужчины”</span
-                            >
-                        </h3>
-                        <p class="flex-item-for-steps__informational-text">
-                            У каждого человека есть свой образ успеха и на
-                            первой сессии ваш сын определит каким навыкам ему
-                            надо обучиться и какие навыки в себе развить, чтобы
-                            стать успешным.
-                        </p>
-                    </div>
-
-                    <div class="work-plane__flex-items-for-steps">
-                        <div class="flex-item-for-steps__image">
-                            <img src="./images/plan/02.svg" alt="Цели" />
-                        </div>
-                        <span class="flex-item-for-steps__number">2</span>
-                        <h3 class="flex-item-for-steps__title">
-                            Ставим долгосрочные
-                            <span class="title__break">цели</span>
-                        </h3>
-                        <p class="flex-item-for-steps__informational-text">
-                            Прописываем цели по всем сферам жизни на 5/10 лет
-                            вперед и отталкиваясь от них ставим цели на
-                            ближайший год. Прокачиваем финансовое мышление - На
-                            этом этапе ваш сын научится азам финансового
-                            планирования и посчитает сколько ему надо начать
-                            зарабатывать, чтобы реализовать все свои цели.
-                        </p>
-                    </div>
-
-                    <div class="work-plane__flex-items-for-steps">
-                        <div class="flex-item-for-steps__image">
-                            <img src="./images/plan/03.svg" alt="Финансы" />
-                        </div>
-                        <span class="flex-item-for-steps__number">3</span>
-                        <h3 class="flex-item-for-steps__title">
-                            Прокачиваем
-                            <span class="title__break"
-                                >финансовое мышление</span
-                            >
-                        </h3>
-                        <p class="flex-item-for-steps__informational-text">
-                            На этом этапе ваш сын научится азам финансового
-                            планирования и посчитает сколько ему надо начать
-                            зарабатывать, чтобы реализовтаь все свои цели.
-                        </p>
-                    </div>
-
-                    <div class="work-plane__flex-items-for-steps">
-                        <div class="flex-item-for-steps__image">
-                            <img src="./images/plan/04.svg" alt="Мышление" />
-                        </div>
-                        <span class="flex-item-for-steps__number">4</span>
-                        <h3 class="flex-item-for-steps__title">
-                            Усиливаем коммуникацию
-                            <span class="title__break"
-                                >с людьми и сотрудниками</span
-                            >
-                        </h3>
-                        <p class="flex-item-for-steps__informational-text">
-                            На этом этапе ваш сын выберет и начнет осваивать
-                            наилучшие для себя инструменты постановки задач и
-                            контроля их выполнение, научится давать развивающую
-                            обратную связь.
-                        </p>
-                    </div>
-
-                    <div class="work-plane__flex-items-for-steps">
-                        <div class="flex-item-for-steps__image">
-                            <img src="./images/plan/05.svg" alt="Уверенность" />
-                        </div>
-                        <span class="flex-item-for-steps__number">5</span>
-                        <h3 class="flex-item-for-steps__title">
-                            Убираем страхи и блоки, неуверенность в себе для
-                            достижения наилучших результатов в бизнесе.
-                        </h3>
-                    </div>
-                </div>
+        <div class="work-plane__flex-container-for-steps">
+          <div class="work-plane__flex-items-for-steps">
+            <div class="flex-item-for-steps__image">
+              <img src="./images/plan/01.svg" alt="Образ" />
             </div>
-        </section>
+            <span class="flex-item-for-steps__number">1</span>
+            <h3 class="flex-item-for-steps__title">
+              Создаем образ
+              <span class="title__break">“успешного мужчины”</span>
+            </h3>
+            <p class="flex-item-for-steps__informational-text">
+              У каждого человека есть свой образ успеха и на первой сессии ваш
+              сын определит каким навыкам ему надо обучиться и какие навыки в
+              себе развить, чтобы стать успешным.
+            </p>
+          </div>
 
-        <section class="about">
-            <div class="about__container container">
-                <div class="about__flex-container">
-                    <div class="about__flex-items">
-                        <h2 class="flex-item__title-for-about">Обо мне</h2>
-                        <p class="flex-item__text-for-about">
-                            Профессиональный бизнес-коуч (РСС ICF), клиенты -
-                            “Магнит”, 2ГИС, Тинькофф
-                        </p>
-                        <p class="flex-item__text-for-about">
-                            16 лет опыт работы в сфере экспорта и автологистики
-                            сельхозпродукции 6 из которых занимал руководящие
-                            должности в крупных экспортных компаниях
-                        </p>
-                        <p class="flex-item__text-for-about">
-                            Ех-коммерческий директор зерновой экспортной
-                            компании с годовым оборотом 20 млрд.рублей
-                        </p>
-                        <p class="flex-item__text-for-about">
-                            Консультант по внедрению изменений и повышению
-                            эффективности работы команды в компании с
-                            миллиардными оборотами
-                        </p>
-                    </div>
-                </div>
+          <div class="work-plane__flex-items-for-steps">
+            <div class="flex-item-for-steps__image">
+              <img src="./images/plan/02.svg" alt="Цели" />
             </div>
-        </section>
-    </body>
+            <span class="flex-item-for-steps__number">2</span>
+            <h3 class="flex-item-for-steps__title">
+              Ставим долгосрочные
+              <span class="title__break">цели</span>
+            </h3>
+            <p class="flex-item-for-steps__informational-text">
+              Прописываем цели по всем сферам жизни на 5/10 лет вперед и
+              отталкиваясь от них ставим цели на ближайший год. Прокачиваем
+              финансовое мышление - На этом этапе ваш сын научится азам
+              финансового планирования и посчитает сколько ему надо начать
+              зарабатывать, чтобы реализовать все свои цели.
+            </p>
+          </div>
+
+          <div class="work-plane__flex-items-for-steps">
+            <div class="flex-item-for-steps__image">
+              <img src="./images/plan/03.svg" alt="Финансы" />
+            </div>
+            <span class="flex-item-for-steps__number">3</span>
+            <h3 class="flex-item-for-steps__title">
+              Прокачиваем
+              <span class="title__break">финансовое мышление</span>
+            </h3>
+            <p class="flex-item-for-steps__informational-text">
+              На этом этапе ваш сын научится азам финансового планирования и
+              посчитает сколько ему надо начать зарабатывать, чтобы реализовтаь
+              все свои цели.
+            </p>
+          </div>
+
+          <div class="work-plane__flex-items-for-steps">
+            <div class="flex-item-for-steps__image">
+              <img src="./images/plan/04.svg" alt="Мышление" />
+            </div>
+            <span class="flex-item-for-steps__number">4</span>
+            <h3 class="flex-item-for-steps__title">
+              Усиливаем коммуникацию
+              <span class="title__break">с людьми и сотрудниками</span>
+            </h3>
+            <p class="flex-item-for-steps__informational-text">
+              На этом этапе ваш сын выберет и начнет осваивать наилучшие для
+              себя инструменты постановки задач и контроля их выполнение,
+              научится давать развивающую обратную связь.
+            </p>
+          </div>
+
+          <div class="work-plane__flex-items-for-steps">
+            <div class="flex-item-for-steps__image">
+              <img src="./images/plan/05.svg" alt="Уверенность" />
+            </div>
+            <span class="flex-item-for-steps__number">5</span>
+            <h3 class="flex-item-for-steps__title">
+              Убираем страхи и блоки, неуверенность в себе для достижения
+              наилучших результатов в бизнесе.
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-me" class="about">
+      <div class="about__container container">
+        <div class="about__flex-container">
+          <div class="about__flex-items">
+            <h2 class="flex-item__title-for-about">Обо мне</h2>
+            <p class="flex-item__text-for-about">
+              Профессиональный бизнес-коуч (РСС ICF), клиенты - “Магнит”, 2ГИС,
+              Тинькофф
+            </p>
+            <p class="flex-item__text-for-about">
+              16 лет опыт работы в сфере экспорта и автологистики
+              сельхозпродукции 6 из которых занимал руководящие должности в
+              крупных экспортных компаниях
+            </p>
+            <p class="flex-item__text-for-about">
+              Ех-коммерческий директор зерновой экспортной компании с годовым
+              оборотом 20 млрд.рублей
+            </p>
+            <p class="flex-item__text-for-about">
+              Консультант по внедрению изменений и повышению эффективности
+              работы команды в компании с миллиардными оборотами
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      document.querySelector(".burger").addEventListener("click", function () {
+        this.classList.toggle("active");
+        document.querySelector(".menu").classList.toggle("open");
+      });
+    </script>
+  </body>
 </html>
