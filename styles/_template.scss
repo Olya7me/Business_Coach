@@ -14,10 +14,10 @@
 a {
   text-decoration: none;
 }
-//!!!!!Оля, исправь фонт фэмэли!!!!!//
+
 html,
 body {
-  font-family: $accent-color;
+  font-family: $font-family;
   font-size: 16px;
 }
 //Общие классы,применяйте для кода
@@ -30,7 +30,7 @@ body {
 .button {
   display: inline-block;
   border-radius: 10px;
-  padding: 20px 88px;
+  padding: 20px 80px;
   width: 280px;
   height: 67px;
   background-color: $accent-color;
@@ -39,7 +39,7 @@ body {
   line-height: 100%;
   font-weight: 600;
   color: $text-color;
-  font-size: 20px;
+  font-size: 1.5rem;
   transition: background-color 0.2s, ease-in;
 
   &:hover {
