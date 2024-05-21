@@ -50,6 +50,14 @@ body {
   background-color: #b8555e;
 }
 
+.red-underline {
+  margin-bottom: 20px;
+  max-width: 363px;
+  border: none;
+  border-radius: 10px;
+  border-top: 5px solid #a21420;
+}
+
 .about {
   background-image: url(/images/about/bg-photo.png);
   background-repeat: no-repeat;
@@ -182,6 +190,14 @@ body {
 }
 .button:hover {
   background-color: #b8555e;
+}
+
+.red-underline {
+  margin-bottom: 20px;
+  max-width: 363px;
+  border: none;
+  border-radius: 10px;
+  border-top: 5px solid #a21420;
 }
 
 .education {
@@ -401,6 +417,14 @@ body {
 }
 .button:hover {
   background-color: #b8555e;
+}
+
+.red-underline {
+  margin-bottom: 20px;
+  max-width: 363px;
+  border: none;
+  border-radius: 10px;
+  border-top: 5px solid #a21420;
 }
 
 .container {
@@ -725,13 +749,6 @@ body {
   text-transform: uppercase;
   color: #131313;
 }
-.work-plane__flex-items-for-title .flex-item-for-title__underline {
-  margin-bottom: 20px;
-  max-width: 363px;
-  border: none;
-  border-radius: 10px;
-  border-top: 5px solid #a21420;
-}
 .work-plane__flex-items-for-title .flex-item-for-title__subtitle {
   font-family: "Manrope", sans-serif;
   font-weight: 300;
@@ -1044,6 +1061,14 @@ body {
 }
 .button:hover {
   background-color: #b8555e;
+}
+
+.red-underline {
+  margin-bottom: 20px;
+  max-width: 363px;
+  border: none;
+  border-radius: 10px;
+  border-top: 5px solid #a21420;
 }
 
 .clients {

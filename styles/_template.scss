@@ -22,7 +22,7 @@ body {
 }
 //Общие классы,применяйте для кода
 .container {
-  max-width: 1240px; //по 100рх справа и слева,весь контент(навигация,блоки,футер) пихайте туда
+  max-width: 1240px; 
   margin-left: auto;
   margin-right: auto;
 }
@@ -45,4 +45,11 @@ body {
   &:hover {
     background-color: $accent-color-hover;
   }
+}
+.red-underline{
+  margin-bottom: 20px;
+  max-width: 363px;
+  border: none;
+  border-radius: 10px;
+  border-top: 5px solid $accent-color;
 }
