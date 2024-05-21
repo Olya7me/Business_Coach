@@ -58,6 +58,134 @@ body {
   border-top: 5px solid #a21420;
 }
 
+.successor {
+  background-image: url(/images/main/successor.png);
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-position: bottom right 300px;
+}
+
+.successor__flex-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.successor__flex-items .flex-item__title-for-successor {
+  padding-top: 80px;
+  margin-bottom: 50px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  text-transform: none;
+  color: white;
+}
+.successor__flex-items .flex-item__text-for-successor {
+  max-width: 524px;
+  line-height: 1.6;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+}
+
+.flex-item__text-for-successor:not(:nth-child(6)) {
+  margin-bottom: 25px;
+}
+.successor__flex-items {
+  margin-bottom: 150px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.successor-section__button{
+  display: inline-block;
+  border-radius: 10px;
+  padding: 20px 80px;
+  width: 280px;
+  height: 67px;
+  background-color: #a21420;
+  cursor: pointer;
+  line-height: 100%;
+  font-weight: 600;
+  font-size: 1.5rem;
+  transition: background-color 0.2s, ease-in;
+  border: none;
+}
+.successor-section__button:hover {
+  background-color: #b8555e;
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .successor {
+    padding: 0 30px;
+    background-image: none;
+    background: black;
+  }
+  .successor__flex-container {
+    display: flex;
+    justify-content: center;
+  }
+  .successor__flex-items .flex-item__title-for-successor {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .successor__flex-items .flex-item__text-for-successor {
+    margin-bottom: 30px;
+    text-align: start;
+    max-width: 100%;
+  }
+  .successor-section__button{
+    justify-content: center;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  .successor {
+    padding: 0 30px 30px 30px;
+    background-image: none;
+    background: black;
+  }
+  .successor__flex-container {
+    display: flex;
+    justify-content: center;
+  }
+  .successor__flex-items .flex-item__title-for-successor {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .successor__flex-items .flex-item__text-for-successor {
+    max-width: 840px;
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+    text-align: start;
+  }
+  
+}
+@media screen and (max-width: 424px) {
+  .successor {
+    padding: 0 30px 30px 30px;
+    background-image: none;
+    background: black;
+  }
+  .successor__flex-container {
+    display: flex;
+    justify-content: center;
+  }
+  .successor__flex-items .flex-item__title-for-successor {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .successor__flex-items .flex-item__text-for-successor {
+    max-width: 840px;
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+    text-align: start;
+  }
+  .successor-section__button-link{
+    justify-content: center;
+  }
+}
+
 .about {
   background-image: url(/images/about/bg-photo.png);
   background-repeat: no-repeat;
