@@ -18,7 +18,7 @@
                   <a href="#about-me" class="menu__link">подробнее обо мне</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">кому подойдет</a>
+                  <a href="#successor-son" class="menu__link">кому подойдет</a>
                 </li>
                 <li class="menu__item">
                   <a href="#work-plan" class="menu__link"
@@ -33,28 +33,34 @@
           </div>
         </header>
         <section class="main-section">
-          <div class="main-section__column main-section__flex-container--text">
-            <div class="main-section__subtitle">
-              Бизнес-ментор, коуч PCC ICF
-            </div>
+          <div
+            class="main-section__column main-section__flex-container-for-text"
+          >
+            <h3 class="main-section__subtitle">Бизнес-ментор, коуч PCC ICF</h3>
             <h1 class="main-section__title">Дмитрий Воловиков</h1>
-            <div class="main-section__title-line">
-              <img src="./images/header/vector.svg" alt="Красная линия" />
-            </div>
+            <hr class="main-section__underline red-underline" />
             <p class="main-section__paragraph">
-              Помогу вам ввести в бизнес вашего сына, будущего наследника и со
-              временем полностью выйти из операционного управления компанией.
-            </p>
-            <button class="main-section__button">
-              <a
-                class="main-section__button-link"
-                href="https://wa.me/+79281617170"
-                target="_blank"
-                >Связаться</a
+              Помогу вам ввести в бизнес вашего сына,
+              <span class="paragraph__break"
+                >будущего наследника и со временем полностью выйти</span
               >
-            </button>
+              <span class="paragraph__break"
+                >из операционного управления компанией.</span
+              >
+            </p>
+            <div class="main-section__button-for-main-section">
+              <a
+                class="button"
+                href="https://api.whatsapp.com/send/?phone=%2B79281617170&text&type=phone_number&app_absent=0"
+                target="_blank"
+              >
+                <span>Связаться</span>
+              </a>
+            </div>
           </div>
-          <div class="main-section__column main-section__flex-container--photo">
+          <div
+            class="main-section__column main-section__flex-container-for-photo"
+          >
             <img
               class="main-section__image"
               src="./images/header/photo_person.svg"
@@ -62,21 +68,23 @@
             />
           </div>
         </section>
-        <button class="whatsapp-button">
-          <span class="whatsapp-button__icon">
-            <img
-              src="./images/header/icon-phone-call.svg"
-              alt="Whatsapp кнопка"
-            />
-          </span>
+        <div class="whatsapp-phone-button">
           <a
-            class="whatsapp-button__text"
-            href="https://wa.me/+79281617170"
+            class="whatsapp-button"
+            href="https://api.whatsapp.com/send/?phone=%2B79281617170&text&type=phone_number&app_absent=0"
             target="_blank"
-            >Оставить заявку</a
           >
-        </button>
-        <button class="whatsapp-icon">
+            <span class="whatsapp-button__icon">
+              <img
+                src="./images/header/icon-phone-call.svg"
+                alt="Whatsapp кнопка"
+              />
+            </span>
+            <span class="whatsapp-button__text">оставить заявку</span>
+          </a>
+        </div>
+
+        <div class="whatsapp-icon">
           <a
             class="whatsapp-icon__link"
             href="https://wa.me/+79281617170"
@@ -87,7 +95,7 @@
               src="./images/header/icon-phone-call.svg"
               alt="Whatsapp иконка"
           /></a>
-        </button>
+        </div>
       </div>
     </div>
     <section id="successor-son" class="successor">
