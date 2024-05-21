@@ -58,134 +58,6 @@ body {
   border-top: 5px solid #a21420;
 }
 
-.successor {
-  background-image: url(/images/main/successor.png);
-  background-repeat: no-repeat;
-  background-color: #000;
-  background-position: bottom right 300px;
-}
-
-.successor__flex-container {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.successor__flex-items .flex-item__title-for-successor {
-  padding-top: 80px;
-  margin-bottom: 50px;
-  font-family: "Manrope", sans-serif;
-  font-weight: 600;
-  font-size: 2.5rem;
-  text-transform: none;
-  color: white;
-}
-.successor__flex-items .flex-item__text-for-successor {
-  max-width: 524px;
-  line-height: 1.6;
-  font-family: "Manrope", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  color: #fff;
-}
-
-.flex-item__text-for-successor:not(:nth-child(6)) {
-  margin-bottom: 25px;
-}
-.successor__flex-items {
-  margin-bottom: 150px;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
-}
-.successor-section__button{
-  display: inline-block;
-  border-radius: 10px;
-  padding: 20px 80px;
-  width: 280px;
-  height: 67px;
-  background-color: #a21420;
-  cursor: pointer;
-  line-height: 100%;
-  font-weight: 600;
-  font-size: 1.5rem;
-  transition: background-color 0.2s, ease-in;
-  border: none;
-}
-.successor-section__button:hover {
-  background-color: #b8555e;
-}
-@media (min-width: 768px) and (max-width: 1200px) {
-  .successor {
-    padding: 0 30px;
-    background-image: none;
-    background: black;
-  }
-  .successor__flex-container {
-    display: flex;
-    justify-content: center;
-  }
-  .successor__flex-items .flex-item__title-for-successor {
-    font-size: 3rem;
-    text-align: center;
-  }
-  .successor__flex-items .flex-item__text-for-successor {
-    margin-bottom: 30px;
-    text-align: start;
-    max-width: 100%;
-  }
-  .successor-section__button{
-    justify-content: center;
-  }
-}
-@media (min-width: 425px) and (max-width: 768px) {
-  .successor {
-    padding: 0 30px 30px 30px;
-    background-image: none;
-    background: black;
-  }
-  .successor__flex-container {
-    display: flex;
-    justify-content: center;
-  }
-  .successor__flex-items .flex-item__title-for-successor {
-    font-size: 3rem;
-    text-align: center;
-  }
-  .successor__flex-items .flex-item__text-for-successor {
-    max-width: 840px;
-    margin-bottom: 30px;
-    font-size: 1.6rem;
-    text-align: start;
-  }
-  
-}
-@media screen and (max-width: 424px) {
-  .successor {
-    padding: 0 30px 30px 30px;
-    background-image: none;
-    background: black;
-  }
-  .successor__flex-container {
-    display: flex;
-    justify-content: center;
-  }
-  .successor__flex-items .flex-item__title-for-successor {
-    font-size: 3rem;
-    text-align: center;
-  }
-  .successor__flex-items .flex-item__text-for-successor {
-    max-width: 840px;
-    margin-bottom: 30px;
-    font-size: 1.6rem;
-    text-align: start;
-  }
-  .successor-section__button-link{
-    justify-content: center;
-  }
-}
-
 .about {
   background-image: url(/images/about/bg-photo.png);
   background-repeat: no-repeat;
@@ -650,11 +522,11 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.main-section__flex-container--text {
+.main-section__flex-container-for-text {
   max-width: 719px;
   align-content: center;
 }
-.main-section__flex-container--photo {
+.main-section__flex-container-for-photo {
   max-width: 521px;
 }
 .main-section__subtitle {
@@ -674,10 +546,9 @@ body {
   text-transform: none;
   color: #fff;
 }
-.main-section__title-line {
-  stroke-width: 5px;
-  stroke: #a21420;
-  margin-bottom: 20px;
+.main-section__undunderline {
+  max-width: 369px;
+  width: 100%;
 }
 .main-section__paragraph {
   line-height: 1.5;
@@ -688,27 +559,24 @@ body {
   text-transform: none;
   color: #fff;
 }
-.main-section__button {
-  width: 280px;
-  height: 67px;
-  border-radius: 10px;
-  border: none;
-  background: #a21420;
-  padding: 20px 80px;
-  cursor: pointer;
+.main-section__paragraph .paragraph__break::before {
+  content: "\a";
+  white-space: pre;
 }
-.main-section__button-link {
-  text-decoration: none;
-  transition: background-color 0.2s, ease-in;
+.main-section__button {
+  letter-spacing: 0.02em;
+  cursor: pointer;
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
   text-transform: none;
   color: #fff;
 }
+.main-section__button:hover {
+  color: #b8555e;
+}
 .main-section__image {
-  width: 100%;
-  max-width: 438px;
+  max-width: 100%;
   height: auto;
   margin-left: 0;
   margin-bottom: 0;
@@ -756,12 +624,12 @@ body {
   background-color: transparent;
 }
 
-@media (max-width: 1240px) and (min-width: 768px) {
+@media (max-width: 1440px) and (min-width: 768px) {
   .container {
-    padding: 0 30px;
+    padding: 0 20px;
   }
   .menu {
-    padding-left: 45px;
+    padding-left: 55px;
   }
   .menu__link {
     font-size: 0.9rem;
@@ -770,12 +638,9 @@ body {
     display: flex;
     flex-wrap: nowrap;
   }
-  .main-section__flex-container--text {
+  .main-section__flex-container-for-text {
     transform: scale(0.8);
     width: 65%;
-  }
-  .main-section__title-line {
-    max-width: 100%;
   }
   .whatsapp-button {
     transform: scale(1);
@@ -785,41 +650,6 @@ body {
   .container {
     padding: 0 20px;
   }
-  .main-section {
-    flex-direction: column;
-    align-items: center;
-  }
-  .main-section__flex-container--text, .main-section__flex-container--photo {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-  }
-  .main-section__flex-container--text {
-    margin-bottom: 30px;
-    margin-top: 20px;
-  }
-  .main-section__title-line {
-    max-width: 100%;
-  }
-  .whatsapp-button {
-    display: none;
-  }
-  .whatsapp-icon {
-    display: block;
-    padding-right: 20px;
-    padding-bottom: 20px;
-  }
-  .whatsapp-icon__img {
-    width: 80px;
-    height: 80px;
-  }
-}
-@media (max-width: 424px) and (min-width: 320px) {
-  .main-section__subtitle {
-    padding-top: 20px;
-  }
-}
-@media (max-width: 768px) {
   .burger {
     display: flex;
   }
@@ -847,6 +677,39 @@ body {
   .menu__link {
     color: #fff;
     font-weight: bold;
+  }
+  .main-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-section__flex-container-for-text {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  .main-section__flex-container-for-photo {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  .whatsapp-button {
+    display: none;
+  }
+  .whatsapp-icon {
+    display: block;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  .whatsapp-icon__img {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 424px) and (min-width: 320px) {
+  .main-section__subtitle {
+    padding-top: 20px;
   }
 }
 @keyframes burgerAnimation {
