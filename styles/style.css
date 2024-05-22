@@ -813,50 +813,70 @@ body {
   text-transform: none;
   color: #fff;
 }
-.education .container .education-container__flex-items-for-title .flex-item-for-title__title-line {
-  stroke-width: 5px;
-  stroke: #a21420;
-  margin-bottom: 20px;
-}
-.education .container .education-container__flex-items-certificates {
-  display: flex;
-  flex-wrap: wrap;
+.education .container .education-container__flex-item {
   row-gap: 20px;
   -moz-column-gap: 25px;
        column-gap: 25px;
 }
-.education .container .education-container__flex-items-certificates .flex-item-certificate {
+.education .container .education-container__flex-item .flex-item__certificate {
   max-height: 210px;
   max-width: 285px;
   min-width: 140px;
 }
-.education .container .education-container__flex-items-certificates .flex-item-certificate img {
+.education .container .education-container__flex-item .flex-item__certificate img {
   height: 100%;
   width: 100%;
 }
-.education .container .education-container__flex-items-certificates .flex-item-certificate--small {
+.education .container .education-container__flex-item .flex-item__certificate-small {
+  display: flex;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+}
+.education .container .education-container__flex-item .flex-item__certificate-small--small {
   max-width: 140px;
   max-height: 210px;
 }
-.education .container .education-container__flex-items-certificates .flex-item-certificate--small img {
+.education .container .education-container__flex-item .flex-item__certificate-small--small img {
   height: 100%;
   width: 100%;
 }
 
+@media screen and (min-width: 901px) and (max-width: 2560px) {
+  .education-container__flex-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row: 1fr;
+  }
+}
 @media screen and (max-width: 1280px) {
   .education-container {
     padding: 30px;
   }
 }
+@media screen and (max-width: 900px) {
+  .education-container__flex-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: repeat(2, 1fr);
+  }
+  .education-container__flex-item .flex-item__certificate {
+    justify-self: center;
+  }
+  .education-container__flex-item .flex-item__certificate-small {
+    justify-self: center;
+  }
+}
 @media screen and (max-width: 670px) {
-  .education-container__flex-items-for-title {
+  .education-container {
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
   }
-  .education-container__flex-items-certificates {
-    justify-content: center;
+  .education-container__flex-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: repeat(4, 1fr);
   }
 }
 .footer {
