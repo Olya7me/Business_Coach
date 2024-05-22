@@ -1,70 +1,62 @@
-@import "../template";
-@import "../vars";
-
 .education {
-    background-color: $background-dark-color;
-    color: $text-color;
-    .container {
-        min-height: 456px;
-        padding-bottom: 80px;
-        .education-container__flex-items-for-title {
-            padding-top: 70px;
-            .flex-item-for-title{
-            &__title {
-                margin-bottom: 1px;
-                @include title-style(
-                    $font-family,
-                    2.5rem,
-                    600,
-                    $text-color
-                    );
-            }
-    
-            &__title-line {
-                stroke-width: 5px;
-                stroke: #a21420;
-                margin-bottom: 20px;
-            }
-        }
-        }
-        .education-container__flex-items-certificates {
-            display: flex;
-            flex-wrap: wrap;
-            row-gap: 20px;
-            column-gap: 25px;
-            .flex-item-certificate {
-                max-height: 210px;
-                max-width: 285px;
-                min-width: 140px;
-                img {
-                    height: 100%;
-                    width: 100%;
-                }
-                &--small {
-                    max-width: 140px;
-                    max-height: 210px;
-                img {
-                    height: 100%;
-                    width: 100%;
-                }
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width:1280px){
-    .education-container {
-        padding: 30px;
-    }
-}
-@media screen and (max-width: 670px){
+  background-color: $background-dark-color;
+  color: $text-color;
+  .container {
+    min-height: 456px;
+    padding-bottom: 80px;
     .education-container__flex-items-for-title {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
+      padding-top: 70px;
+      .flex-item-for-title {
+        &__title {
+          margin-bottom: 1px;
+          @include title-style($font-family, 2.5rem, 600, $text-color);
+        }
+
+        &__title-line {
+          stroke-width: 5px;
+          stroke: #a21420;
+          margin-bottom: 20px;
+        }
+      }
     }
-    .education-container__flex-items-certificates{
-        justify-content: center;
+    .education-container__flex-items-certificates {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 20px;
+      column-gap: 25px;
+      .flex-item-certificate {
+        max-height: 210px;
+        max-width: 285px;
+        min-width: 140px;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+        &--small {
+          max-width: 140px;
+          max-height: 210px;
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
     }
+  }
+}
+@media screen and (max-width: 1280px) {
+  .education-container {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .education-container__flex-items-for-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .education-container__flex-items-certificates {
+    justify-content: center;
+  }
 }
