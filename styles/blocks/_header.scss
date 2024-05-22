@@ -1,6 +1,3 @@
-.container {
-  min-height: 678px;
-}
 .header-navigation {
   background: linear-gradient(193deg, #1f1f1f 0%, #131313 100%);
 }
@@ -93,10 +90,6 @@
     align-content: center;
   }
 
-  &__flex-container-for-photo {
-    max-width: 521px;
-  }
-
   &__subtitle {
     line-height: 1.5;
     margin-bottom: 10px;
@@ -107,10 +100,7 @@
     margin-bottom: 1px;
     @include title-style($font-family, 3rem, 600, $text-color);
   }
-  &__undunderline {
-    max-width: 369px;
-    width: 100%;
-  }
+
   &__paragraph {
     line-height: 1.5;
     margin-bottom: 40px;
@@ -121,38 +111,35 @@
     }
   }
 
-  &__button {
-    letter-spacing: 0.02em;
-    cursor: pointer;
-    @include title-style($font-family, 1.5rem, 400, $text-color);
-
-    &:hover {
-      color: $accent-color-hover;
-    }
+  &__button:hover {
+    color: $accent-color-hover;
   }
-
-  &__image {
-    max-width: 100%;
-    height: auto;
-    margin-left: 0;
-    margin-bottom: 0;
+  &__flex-container-for-photo {
+    max-width: 521px;
+    img {
+      max-width: 100%;
+      height: auto;
+      padding-left: 75px;
+      margin-left: 0;
+      margin-bottom: 0;
+    }
   }
 }
 
 .whatsapp-button {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  padding: 31px 20px 31px;
+  cursor: pointer;
   width: 243px;
   height: 81px;
   border: none;
   border-radius: 20px;
   background: $text-color;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 99;
-  display: flex;
-  align-items: center;
-  padding: 31px 20px 31px;
-  cursor: pointer;
 
   &__text {
     padding-left: 0;
@@ -178,7 +165,7 @@
   background-color: transparent;
 }
 
-@media (max-width: 1440px) and (min-width: 768px) {
+@media (max-width: 1300px) and (min-width: 768px) {
   .container {
     padding: 0 20px;
   }
@@ -197,6 +184,11 @@
       transform: scale(0.8);
       width: 65%;
     }
+    &__flex-container-for-photo {
+      img {
+        padding-left: 0;
+      }
+    }
   }
 
   .whatsapp-button {
@@ -204,7 +196,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     padding: 0 20px;
   }
@@ -250,11 +242,15 @@
       padding: 0;
       margin-bottom: 30px;
       margin-top: 20px;
+      .red-underline {
+        margin-right: auto;
+        margin-left: auto;
+      }
     }
     &__flex-container-for-photo {
-      width: 100%;
-      text-align: center;
-      padding: 0;
+      img {
+        padding-left: 0;
+      }
     }
   }
 

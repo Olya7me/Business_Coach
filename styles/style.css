@@ -49,10 +49,6 @@ body {
   border-top: 5px solid #a21420;
 }
 
-.container {
-  min-height: 678px;
-}
-
 .header-navigation {
   background: linear-gradient(193deg, #1f1f1f 0%, #131313 100%);
 }
@@ -148,9 +144,6 @@ body {
   max-width: 719px;
   align-content: center;
 }
-.main-section__flex-container-for-photo {
-  max-width: 521px;
-}
 .main-section__subtitle {
   line-height: 1.5;
   margin-bottom: 10px;
@@ -168,10 +161,6 @@ body {
   text-transform: none;
   color: #fff;
 }
-.main-section__undunderline {
-  max-width: 369px;
-  width: 100%;
-}
 .main-section__paragraph {
   line-height: 1.5;
   margin-bottom: 40px;
@@ -185,39 +174,34 @@ body {
   content: "\a";
   white-space: pre;
 }
-.main-section__button {
-  letter-spacing: 0.02em;
-  cursor: pointer;
-  font-family: "Manrope", sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  text-transform: none;
-  color: #fff;
-}
 .main-section__button:hover {
   color: #b8555e;
 }
-.main-section__image {
+.main-section__flex-container-for-photo {
+  max-width: 521px;
+}
+.main-section__flex-container-for-photo img {
   max-width: 100%;
   height: auto;
+  padding-left: 75px;
   margin-left: 0;
   margin-bottom: 0;
 }
 
 .whatsapp-button {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  padding: 31px 20px 31px;
+  cursor: pointer;
   width: 243px;
   height: 81px;
   border: none;
   border-radius: 20px;
   background: #fff;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 99;
-  display: flex;
-  align-items: center;
-  padding: 31px 20px 31px;
-  cursor: pointer;
 }
 .whatsapp-button__text {
   padding-left: 0;
@@ -246,7 +230,7 @@ body {
   background-color: transparent;
 }
 
-@media (max-width: 1440px) and (min-width: 768px) {
+@media (max-width: 1300px) and (min-width: 768px) {
   .container {
     padding: 0 20px;
   }
@@ -264,11 +248,14 @@ body {
     transform: scale(0.8);
     width: 65%;
   }
+  .main-section__flex-container-for-photo img {
+    padding-left: 0;
+  }
   .whatsapp-button {
     transform: scale(1);
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     padding: 0 20px;
   }
@@ -311,10 +298,12 @@ body {
     margin-bottom: 30px;
     margin-top: 20px;
   }
-  .main-section__flex-container-for-photo {
-    width: 100%;
-    text-align: center;
-    padding: 0;
+  .main-section__flex-container-for-text .red-underline {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .main-section__flex-container-for-photo img {
+    padding-left: 0;
   }
   .whatsapp-button {
     display: none;
