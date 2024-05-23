@@ -1,5 +1,5 @@
 .about {
-    background-image: url(/images/about/bg-photo.png);
+    background-image: url(../../images/about/bg-photo.png);
     background-repeat: no-repeat; 
     background-size: cover; 
 }
@@ -8,8 +8,9 @@
     justify-content: flex-end;
 }
 .about__flex-items {
+    margin-bottom: 90px;
     .flex-item__title-for-about {
-        padding-top: 80px;
+        padding-top: 81px;
         margin-bottom: 50px;
         @include title-style(
             $font-family,
