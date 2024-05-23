@@ -2,7 +2,6 @@
   background-color: $background-dark-color;
   color: $text-color;
   .container {
-    min-height: 456px;
     padding-bottom: 80px;
     .education-container__flex-items-for-title {
       padding-top: 70px;
@@ -25,15 +24,17 @@
           width: 100%;
         }
       }
-      .flex-item__certificate-small {
+      .flex-item__certificate-page {
         display: flex;
-        column-gap: 25px;
         &--small {
           max-width: 140px;
           max-height: 210px;
           img {
             height: 100%;
             width: 100%;
+            .clickable-image {
+              cursor: pointer;
+            }
           }
         }
       }
@@ -46,6 +47,9 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-row: 1fr;
+  }
+  .flex-item__certificate-page {
+    gap: 25px;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -60,8 +64,9 @@
     grid-row: repeat(2, 1fr);
     .flex-item__certificate {
       justify-self: center;
-      &-small{
+      &-page{
         justify-self: center;
+        gap: 8px;
       }
     }
   }
