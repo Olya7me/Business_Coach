@@ -1,8 +1,8 @@
-<svg width="200" height="90" xmlns="http://www.w3.org/2000/svg">
+<svg width="280" height="80" xmlns="http://www.w3.org/2000/svg">
  <g>
   <title>Слой 1</title>
-  <path fill="#cccccc" stroke="#000" opacity="undefined" d="m-91,187l297,0l0,89l-297,0l0,-89z" id="svg_1"/>
-  <text fill="#191919" stroke-width="0" x="46" y="51" id="svg_6" font-size="30" font-family="'Crimson Pro'" text-anchor="start" xml:space="preserve" stroke="#000" transform="matrix(1.25867 0 0 2.04397 -47.5223 -37.5996)">ЛД "ТАРА"</text>
+  <path id="svg_1" d="m-91,187l297,0l0,89l-297,0l0,-89z" opacity="undefined" stroke="#000" fill="#cccccc"/>
+  <text font-weight="bold" transform="matrix(1.06946 0 0 1.12938 42.3453 -1.58302)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="'Besley'" font-size="30" stroke-width="0" id="svg_3" y="50" x="10" fill="#00423c">ЛД "ТАРА"</text>
  </g>
 
 </svg>
