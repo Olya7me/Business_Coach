@@ -626,7 +626,7 @@ body {
   }
 }
 .about {
-  background-image: url(/images/about/bg-photo.png);
+  background-image: url(../../images/about/bg-photo.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -636,8 +636,11 @@ body {
   justify-content: flex-end;
 }
 
+.about__flex-items {
+  margin-bottom: 90px;
+}
 .about__flex-items .flex-item__title-for-about {
-  padding-top: 80px;
+  padding-top: 81px;
   margin-bottom: 50px;
   font-family: "Manrope", sans-serif;
   font-weight: 600;
@@ -867,7 +870,7 @@ body {
   }
 }
 .footer {
-  background-image: url(/images/footer/bg-photo.jpg);
+  background-image: url(../../images/footer/bg-photo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
