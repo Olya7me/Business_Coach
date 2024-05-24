@@ -1113,6 +1113,9 @@ body {
          column-gap: 15px;
     row-gap: 15px;
   }
+  .clients-container__flex-item::after {
+    display: none;
+  }
 }
 .education {
   background-color: #131313;
@@ -1123,7 +1126,7 @@ body {
 }
 .education .container .education-container__flex-items-for-title {
   padding-top: 70px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .education .container .education-container__flex-items-for-title .flex-item-for-title__title {
   margin-bottom: 1px;
@@ -1140,6 +1143,7 @@ body {
   row-gap: 20px;
   -moz-column-gap: 25px;
        column-gap: 25px;
+  margin-bottom: 20px;
 }
 .education .container .education-container__flex-item .flex-item__certificate {
   max-height: 210px;

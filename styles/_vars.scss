@@ -1,20 +1,16 @@
-//Переменные шрифтов//
 $font-family: "Manrope", sans-serif;
 $second-family: "Oswald", sans-serif;
 $third-family: "Roboto", sans-serif;
 
-//Цвета
-$accent-color: #a21420; //красный
-$text-color: #fff; //цвет текста
-$background-dark-color: #131313; //темный
+$accent-color: #a21420; 
+$text-color: #fff; 
+$background-dark-color: #131313;
 $background-gray-color: #e9e8e8;
-$black-color: #000; //черный
-$accent-color-hover: #b8555e; //при наведении на кнопку(можно поменять если не нравится)
+$black-color: #000; 
+$accent-color-hover: #b8555e; 
 $burger-color: #faf6f2;
 $burger-menu-background-color: grey;
 
-//Миксины
-//Миксин для заголовков для красного и для белого
 @mixin title-style(
   $font-family,
   $font-size,
