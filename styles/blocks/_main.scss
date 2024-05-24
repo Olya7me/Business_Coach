@@ -1,6 +1,16 @@
 .succsessor-son {
   background-image: url(../../images/main/vitiakka_laptop_photo1.png);
   background-repeat: no-repeat;
+  background-size: left;
+  background-color: $black-color;
+}
+.succsessor-son__flex-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.succsessor-son__flex-items {.succsessor-son {
+  background-image: url(../../images/main/vitiakka_laptop_photo1.png);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -9,6 +19,167 @@
   justify-content: flex-end;
 }
 .succsessor-son__flex-items {
+  margin-bottom: 90px;
+  .flex-item__title-for-succsessor-son {
+    padding-top: 81px;
+    margin-bottom: 50px;
+    @include title-style($font-family, 2.5rem, 600, $text-color);
+
+    .title__break::before {
+      content: "\A";
+      white-space: pre;
+    }
+  }
+
+  .flex-item__text-for-succsessor-son {
+    max-width: 524px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 20px;
+    color: $text-color;
+
+    .text-for-succsessor-son__question--accent {
+      font-weight: bolder;
+    }
+  }
+}
+
+.flex-item__text-for-succsessor-son:not(:nth-child(5)) {
+  margin-bottom: 25px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .succsessor-son {
+    padding: 0 30px;
+    background-image: none;
+    background: linear-gradient(to right, #131313, #565656);
+  }
+  .succsessor-son__flex-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .succsessor-son__flex-items {
+    display: flex;
+    flex-direction: column;
+    .flex-item__title-for-succsessor-son {
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    .flex-item__text-for-succsessor-son {
+      max-width: 1160px;
+    }
+
+    .flex-item__text-for-succsessor-son:not(:nth-child(5)) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .succsessor-son {
+    padding: 0 30px 30px 30px;
+    background-image: none;
+    background: linear-gradient(to right, #131313, #565656);
+  }
+  .succsessor-son__flex-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .succsessor-son__flex-items {
+    display: flex;
+    flex-direction: column;
+    .flex-item__title-for-succsessor-son {
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    .flex-item__text-for-succsessor-son {
+      max-width: 840px;
+      margin-bottom: 30px;
+      font-size: 1.6rem;
+    }
+
+    .flex-item__button-for-footer {
+      align-self: center;
+    }
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .succsessor-son {
+    padding: 0 30px 30px 30px;
+    background-image: none;
+    background: linear-gradient(to right, #131313, #565656);
+  }
+  .succsessor-son__flex-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .succsessor-son__flex-items {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    .flex-item__title-for-succsessor-son {
+      font-size: 2rem;
+      text-align: center;
+      word-wrap: break-word;
+      max-width: 100%;
+    }
+
+    .flex-item__text-for-succsessor-son {
+      max-width: 840px;
+      margin-bottom: 30px;
+      font-size: 1.6rem;
+      word-wrap: break-word;
+    }
+
+    .flex-item__button-for-footer {
+      align-self: center;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .succsessor-son {
+    padding: 0 30px 30px 30px;
+    background-image: none;
+    background: linear-gradient(to right, #131313, #565656);
+  }
+  .succsessor-son__flex-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .succsessor-son__flex-items {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    .flex-item__title-for-succsessor-son {
+      font-size: 1.8rem;
+      text-align: center;
+      word-wrap: break-word;
+      max-width: 100%;
+    }
+
+    .flex-item__text-for-succsessor-son {
+      max-width: 840px;
+      margin-bottom: 30px;
+      font-size: 1.6rem;
+      word-wrap: break-word;
+    }
+
+    .flex-item__button-for-footer {
+      align-self: center;
+    }
+  }
+}
+
   margin-bottom: 90px;
   .flex-item__title-for-succsessor-son {
     padding-top: 81px;
