@@ -10,9 +10,17 @@
       }
     }
   }
+  .flex-item-for-title__underline {
+    margin-bottom: 68px;
+  }
+  
   .clients-container__flex-item {
-    column-gap: 39px;
-    row-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+    justify-content: center;
     .flex-item__logo {
       max-width: 187px;
       align-self: center;
@@ -22,40 +30,48 @@
     }
   }
 }
+.clients-container__flex-item::after {
+  content: "";
+  display: block;
+  height: 80px; 
+}
 
-@media screen and (max-width: 2560px) {
-  .clients-container__flex-item {
-    display: grid;
+@media screen and (max-width: 1280px) {
+  .clients .clients-container .clients-container__flex-item {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
-  }
-}
-
-@media screen and (min-width: 670px) and (max-width: 2560px) {
-  .clients-container__flex-item {
-    padding: 60px;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .clients-container {
+    justify-items: center; 
+    align-items: center; 
     padding: 30px;
   }
 }
+
 @media screen and (max-width: 768px) {
-  .clients-container__flex-item {
-    display: grid;
+  .clients-container__flex-items-for-title .flex-item-for-title__title{
+    display: flex;
+    justify-content: center;
+  }
+  .red-underline{
+    margin: 0 auto;
+  }
+  .clients .clients-container .clients-container__flex-item  {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
   }
 }
 
-@media screen and (max-width: 670px) {
-  .clients-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    &__flex-item {
-      padding: 30px;
-    }
+@media screen and (max-width: 425px) {
+  .clients .clients-container .clients-container__flex-item  {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    justify-items: center; 
+    align-items: center; 
+    column-gap: 15px;
+    row-gap: 15px;
+  }
+
+  .clients-container__flex-item::after {
+    display: none; 
   }
 }
+
