@@ -34,6 +34,12 @@
                 font-weight: bolder;
             }
         }
+
+        .flex-item__button-for-succsessor-son {
+            .button {
+                padding: 20px 72px;
+            }
+        }
     }
 
     .flex-item__text-for-succsessor-son:not(:nth-child(5)) {
