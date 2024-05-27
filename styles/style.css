@@ -371,6 +371,9 @@ body {
 .succsessor-son__flex-items .flex-item__text-for-succsessor-son .text-for-succsessor-son__question--accent {
   font-weight: bolder;
 }
+.succsessor-son__flex-items .flex-item__button-for-succsessor-son .button {
+  padding: 20px 72px;
+}
 
 .flex-item__text-for-succsessor-son:not(:nth-child(5)) {
   margin-bottom: 25px;
@@ -1150,6 +1153,7 @@ body {
 .education .container .education-container__flex-item .flex-item__certificate-page--small {
   max-width: 140px;
   max-height: 210px;
+  margin-right: 3px;
 }
 .education .container .education-container__flex-item .flex-item__certificate-page--small img {
   height: 100%;
